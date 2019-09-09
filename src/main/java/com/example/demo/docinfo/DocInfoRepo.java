@@ -4,7 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -17,9 +16,9 @@ public class DocInfoRepo {
             new DocInfo(4, "4kalova", List.of("surgeon", "genetics"), LocalDate.parse("2000-01-01")),
             new DocInfo(5, "Medin", List.of("genetics", "veterinarian"), LocalDate.parse("2000-01-01")));
 
-    public DocInfo getDocInfo(Integer docDiplomaId) {
+    public DocInfo getDocInfo(Integer docInfoId) {
         return docInfoList.stream()
-                .filter(x -> x.getDocDiplomaId().equals(docDiplomaId))
+                .filter(x -> x.getDocInfoId().equals(docInfoId))
                 .collect(toSingleton());
     }
 

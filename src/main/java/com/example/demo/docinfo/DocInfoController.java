@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class DocInfoController {
     private final DocInfoService docInfoService;
 
-    @GetMapping("/{docDiplomaId}")
-    public DocInfo getDocInfo(@PathVariable Integer docDiplomaId){
-        return docInfoService.getDocInfo(docDiplomaId);
+    @GetMapping("/{docinfoid}")
+    public DocInfo getDocInfo(@PathVariable Integer docInfoId){
+        return docInfoService.getDocInfo(docInfoId);
     }
 }

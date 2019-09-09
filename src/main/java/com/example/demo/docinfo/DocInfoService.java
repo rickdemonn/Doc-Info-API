@@ -10,7 +10,7 @@ import java.util.Optional;
 public class DocInfoService {
     private final DocInfoRepo docInfoRepo;
 
-    public DocInfo getDocInfo(Integer docDiplomaId) {
-        return docInfoRepo.getDocInfo(docDiplomaId);
+    public DocInfo getDocInfo(Integer docInfoId) {
+        return docInfoRepo.getDocInfo(docInfoId);
     }
 }
