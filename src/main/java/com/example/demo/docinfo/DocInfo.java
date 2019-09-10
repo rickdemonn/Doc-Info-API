@@ -11,5 +11,5 @@ public class DocInfo {
     private final Integer docInfoId;
     private final String university;
     private final List<String> specializations;
-    private final LocalDate date;
+    private final LocalDate universityGradationDate;
 }
